@@ -1,4 +1,12 @@
+# db
 spring:
   h2:
     console:
       enabled: true
+# query visible
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+        use_sql_comments: true
