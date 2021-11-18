@@ -1,4 +1,4 @@
-package com.mia.dProject.dmaker.exception;
+package com.mia.dProject.dmaker.code;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

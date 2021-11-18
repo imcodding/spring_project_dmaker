@@ -7,22 +7,18 @@ import com.mia.dProject.dmaker.dto.DeveloperDto;
 import com.mia.dProject.dmaker.dto.EditDeveloper;
 import com.mia.dProject.dmaker.entity.Developer;
 import com.mia.dProject.dmaker.entity.RetiredDeveloper;
-import com.mia.dProject.dmaker.exception.DMakerErrorCode;
 import com.mia.dProject.dmaker.exception.DMakerException;
 import com.mia.dProject.dmaker.repository.DeveloperRepository;
 import com.mia.dProject.dmaker.repository.RetiredDeveloperRepository;
 import com.mia.dProject.dmaker.type.DeveloperLevel;
-import com.mia.dProject.dmaker.type.DeveloperSkillType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.validation.Valid;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.mia.dProject.dmaker.exception.DMakerErrorCode.*;
+import static com.mia.dProject.dmaker.code.DMakerErrorCode.*;
 
 @Service
 @RequiredArgsConstructor // 자동으로 생성자를 만들어준다.

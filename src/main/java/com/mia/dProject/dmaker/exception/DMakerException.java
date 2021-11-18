@@ -1,5 +1,9 @@
 package com.mia.dProject.dmaker.exception;
 
+import com.mia.dProject.dmaker.code.DMakerErrorCode;
+import lombok.Getter;
+
+@Getter
 public class DMakerException extends RuntimeException {
     private DMakerErrorCode dMakerErrorCode;
     private String detailMessage;
